@@ -1,9 +1,11 @@
-<!doctypehtml><meta charset="utf-8"><title>Kanban board</title><link rel="stylesheet"href="css/style.css"><div id="board"class="board"><h1 class="kanban-header">Kanban board</h1><button class="create-column btn">Add a column</button><div class="column-container"></div></div><script id="column-template"type="x-tmpl-mustache"><div class="column">
+<!doctypehtml><meta charset="utf-8"><title>Kanban board</title><link rel="stylesheet"href="css/style.css"><div class="notification-overlay"><div id="notification"class="notification notification--create">Generating board...</div></div><div id="board"class="board"><h1 class="kanban-header">Kanban board</h1><button class="create-column btn btn--create">Add column</button><div class="column-container"></div></div><script id="column-template"type="x-tmpl-mustache"><div class="column">
           <h2 class="column-title">{{ name }}</h2>
           <ul id={{ id }} class="column-card-list"></ul>
-          <button class="btn btn-delete">Remove column</button>
-          <button class="btn add-card">Add a card</button>
-      </div></script><script id="card-template"type="x-tmpl-mustache"><div class="card">
+          <button class="btn btn--rename">Rename column</button>
+          <button class="btn btn--delete">Remove column</button>
+          <button class="btn btn--create">Add card</button>
+      </div></script><script id="card-template"type="x-tmpl-mustache"><div class="card" >
         <p class="card-description">{{ description }}</p>
-        <button class="btn btn-delete">Delete card</button>
-      </div</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.6.0/Sortable.min.js"></script><script src="js/script.js"></script>
+        <button class="btn btn--delete">Delete card</button>
+        <button class="btn btn--rename">Rename card</button>
+      </div</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.6.0/Sortable.min.js"></script><script src="js/Column.js"></script><script src="js/Card.js"></script><script src="js/Board.js"></script><script src="js/App.js"></script>

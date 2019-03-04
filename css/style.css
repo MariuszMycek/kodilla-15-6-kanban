@@ -3,23 +3,76 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+}
+
 .board {
   width: 100%;
   padding: 0 30px 30px;
   max-width: 1200px;
   margin: 50px auto;
-  font-family: "Roboto Mono", monospace;
   background: #ffeaa7;
   border: 2px solid #fdcb6e;
   border-radius: 10px;
 }
 
 .btn {
-  background: #fab1a0;
   padding: 5px;
   margin-bottom: 15px;
   border: none;
   border-radius: 5px;
+}
+
+.btn--rename {
+  background: #74b9ff;
+}
+
+.btn--delete {
+  background: #ff7675;
+}
+
+.btn--create {
+  background: #00b894;
+}
+
+.notification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.notification {
+  margin-top: 150px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  font-size: 24px;
+}
+
+.notification--delete {
+  color: #ff7675;
+}
+
+.notification--create {
+  color: #00b894;
+}
+
+.notification--rename {
+  color: #74b9ff;
+}
+
+.hidden {
+  display: none;
 }
 
 .create-column {

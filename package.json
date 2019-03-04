@@ -19,7 +19,7 @@
     "build:sass-compressed": "node-sass --output-style compressed -o docs/css sass",
     "build:autoprefixer-docs": "autoprefixer-cli docs/css/style.css",
     "build:tinypng": "tinypng docs/assets/images",
-    "build:uglify": "uglifyjs --compress --mangle --output docs/js/script.js -- js/script.js",
+    
     "build:html-minifier": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true index.html -o docs/index.html",
     "copy:css": "cp -r css docs",
     "copy:js": "cp -r js docs",
